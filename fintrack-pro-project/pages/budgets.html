@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Budgets</title>
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+<h2>FinTrack</h2>
+<a href="dashboard.html">Dashboard</a>
+<a href="transactions.html">Transactions</a>
+<a href="goals.html">Goals</a>
+<a href="budgets.html">Budgets</a>
+<a href="analytics.html">Analytics</a>
+</div>
+
+<div class="main">
+
+<h1>Monthly Budgets</h1>
+
+<div class="card form">
+
+<input id="budgetCategory" placeholder="Category">
+<input id="budgetAmount" type="number" placeholder="Monthly Budget">
+
+<button onclick="addBudget()">Create Budget</button>
+
+</div>
+
+<div id="budgetList"></div>
+
+</div>
+
+<script src="../js/storage.js"></script>
+<script src="../js/budgets.js"></script>
+
+</body>
+</html>

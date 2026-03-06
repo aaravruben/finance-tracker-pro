@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Savings Goals</title>
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+<h2>FinTrack</h2>
+<a href="dashboard.html">Dashboard</a>
+<a href="transactions.html">Transactions</a>
+<a href="goals.html">Goals</a>
+<a href="budgets.html">Budgets</a>
+<a href="analytics.html">Analytics</a>
+</div>
+
+<div class="main">
+
+<h1>Savings Goals</h1>
+
+<div class="card form">
+
+<input id="goalName" placeholder="Goal Name">
+<input id="goalAmount" type="number" placeholder="Target Amount">
+
+<button onclick="addGoal()">Create Goal</button>
+
+</div>
+
+<div id="goalList"></div>
+
+</div>
+
+<script src="../js/storage.js"></script>
+<script src="../js/goals.js"></script>
+
+</body>
+</html>

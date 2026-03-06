@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Net Worth</title>
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+<h2>FinTrack</h2>
+<a href="dashboard.html">Dashboard</a>
+<a href="transactions.html">Transactions</a>
+<a href="goals.html">Goals</a>
+<a href="budgets.html">Budgets</a>
+<a href="analytics.html">Analytics</a>
+<a href="networth.html">Net Worth</a>
+</div>
+
+<div class="main">
+
+<h1>Net Worth</h1>
+
+<div class="card form">
+
+<input id="assetName" placeholder="Asset">
+<input id="assetValue" type="number" placeholder="Value">
+<button onclick="addAsset()">Add Asset</button>
+
+<input id="debtName" placeholder="Liability">
+<input id="debtValue" type="number" placeholder="Amount">
+<button onclick="addDebt()">Add Liability</button>
+
+</div>
+
+<div id="networthResult" class="card"></div>
+
+</div>
+
+<script src="../js/storage.js"></script>
+<script src="../js/networth.js"></script>
+
+</body>
+</html>

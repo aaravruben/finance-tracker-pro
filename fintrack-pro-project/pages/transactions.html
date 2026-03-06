@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Transactions</title>
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+<h2>FinTrack</h2>
+<a href="dashboard.html">Dashboard</a>
+<a href="transactions.html">Transactions</a>
+<a href="goals.html">Goals</a>
+<a href="budgets.html">Budgets</a>
+<a href="analytics.html">Analytics</a>
+</div>
+
+<div class="main">
+
+<h1>Add Transaction</h1>
+
+<div class="card form">
+
+<input id="amount" type="number" placeholder="Amount">
+<input id="category" placeholder="Category">
+
+<select id="type">
+<option value="income">Income</option>
+<option value="expense">Expense</option>
+</select>
+
+<input id="date" type="date">
+<input id="description" placeholder="Description">
+
+<button onclick="addTransaction()">Add</button>
+
+</div>
+
+<h2>Transaction History</h2>
+
+<div id="transactionList"></div>
+
+</div>
+
+<script src="../js/storage.js"></script>
+<script src="../js/transactions.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dashboard</title>
+<link rel="stylesheet" href="../css/styles.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="sidebar">
+<h2>FinTrack</h2>
+
+<a href="dashboard.html">Dashboard</a>
+<a href="transactions.html">Transactions</a>
+<a href="goals.html">Goals</a>
+<a href="budgets.html">Budgets</a>
+<a href="analytics.html">Analytics</a>
+<a href="networth.html">Net Worth</a>
+
+</div>
+
+<div class="main">
+
+<h1>Dashboard</h1>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>Total Balance</h3>
+<p id="balance">$0</p>
+</div>
+
+<div class="card">
+<h3>Total Income</h3>
+<p id="income">$0</p>
+</div>
+
+<div class="card">
+<h3>Total Expenses</h3>
+<p id="expenses">$0</p>
+</div>
+
+<div class="card">
+<h3>Savings</h3>
+<p id="savings">$0</p>
+</div>
+
+</div>
+
+<div class="chart-card">
+<canvas id="financeChart"></canvas>
+</div>
+
+</div>
+
+<script src="../js/storage.js"></script>
+<script src="../js/dashboard.js"></script>
+
+</body>
+</html>
